@@ -1,0 +1,933 @@
+@font-face {
+  font-family: "SDGB";
+  src: url("./font/AppleSDGothicNeoB.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SDG";
+  src: url("./font/AppleSDGothicNeoM.ttf");
+  font-weight: normal;
+}
+
+
+
+.forlist {
+    text-align: left;
+}
+
+
+
+
+/* 헤드라인, 서브라인 */
+h3{
+    color:#36BF98 ; 
+    font-weight:800; 
+    font-size : 26px;
+    font-family: 'SDGB';
+}
+
+.sub-text{
+    color:#84D9C9;
+    font-size: 16px;
+    font-family: 'SDG';
+    text-decoration: none;
+}
+
+/* 서브페이지헤더 */
+
+.subpage-header {
+  width: 100%;
+  float: left;
+  padding: 20px;
+  padding-top: 100px;
+  vertical-align: center;
+  text-align: center;
+  font-family: 'SDGB';
+  font-size: 12px;
+}
+
+.my-edit{
+  width: 100%;
+  float: left;
+  padding: 20px;
+  vertical-align: center;
+  text-align: center;
+}
+
+/* 로그인 모달 */
+.black-background {
+    background: rgba(0,0,0,0.0);
+    position: fixed;
+    z-index : 5;
+    width: 100%;
+    height: 100%;
+    display :block;
+    transition: all 1s;
+    transform: translateY(-150%)
+}
+
+.white-background {
+    background: white;
+    width: 80%;
+    margin: 100px auto;
+    padding : 20px;
+    border-radius: 15px;
+    text-align: center;
+    
+    
+}
+
+.black-background2 {
+    background: rgba(0,0,0,0.0);
+    position: fixed;
+    z-index : 5;
+    width: 100%;
+    height: 100%;
+    display :block;
+    transition: all 1s;
+    transform: translateY(-150%)
+}
+
+.white-background2 {
+    background: white;
+    width: 80%;
+    margin: 100px auto;
+    padding : 20px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.id-alert{
+  color: red;
+  text-decoration: none;
+  display:none;
+}
+.pw-alert{
+  color: red;
+  text-decoration: none;
+  display:none;
+
+}
+.name-alert{
+  color: red;
+  text-decoration: none;
+  display:none;
+
+}
+.phone-alert{
+  color: red;
+  text-decoration: none;
+  display:none;
+
+}
+.email-alert{
+  color: red;
+  text-decoration: none;
+  display:none;
+
+}
+
+
+.modal-header{
+  display: block;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin: 0 auto;
+  font-size: 50px; 
+  color: #84D9C9;
+}
+
+.form-control{
+    margin-bottom: 15px;
+}
+.slide-down {
+    background: rgba(0,0,0,0.9);
+    transform: translateY(0px);
+}
+
+
+/* 네비게이션 */
+.nav-menu{
+    z-index: 100;
+    height:50px;
+    padding :10px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    font-size:20px;
+    font-family:'Gloria Hallelujah', cursive;
+    color:#84D9C9;
+    transition: 0.3s;
+    float:left;
+    margin: 0px;
+
+}
+
+.nav-menu a{  
+  text-decoration: none;
+  color: #84D9C9;
+  
+}
+
+.nav-whois{  
+  text-decoration: none;
+  color: #84D9C9;
+  font-size: 15px;
+  float: right;
+  margin-top:4px;
+  font-family: 'SDG';
+  
+}
+
+
+
+.nav-menuShow{
+    background-color: white;
+    font-size:20px;
+    transition: 0.3s;
+}
+
+.nav-button {
+ float: right;
+color: #84D9C9;
+  display: flex;
+  padding:5px;
+  margin-left:10px;
+}
+
+.active{
+  background-color:red;
+}
+
+
+/* ------------------ */
+
+.intro-wrap{
+    float: left;
+    width: 100%;
+    /* height:550px; */
+    padding: 20px;
+    background-color:white;
+}
+
+
+/* .intro-wrap {
+    background-image: linear-gradient(to bottom, #F2F2F2,#D0F2F2);
+    height: 600px;
+    padding: 20px;
+    color: #56BFAC;
+    position:relative;
+    margin-bottom: 30px;
+  }
+  .intro-container {
+    max-width: 1200px;
+    margin: auto;
+  } 
+  .intro-text {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 250px;
+  }
+  .intro-image {
+    width: 400px;
+    float: right;
+    margin-top: 95px;
+  } */
+
+
+
+
+
+
+
+
+
+/* 메인 */
+.main-background {
+    background-image: linear-gradient(to bottom, #D0F2F2, #F2F2F2);
+    height: 550px;
+    padding: 20px;
+    color: #84D9C9;
+    position:relative;
+    margin-bottom: 20px;
+  }
+  .main-container {
+      padding:20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'SDG';
+  } 
+  .main-text {
+    float: left;
+    margin-top: 50px;
+    font-family: 'SDG';
+  }
+  .main-iphone {
+    width: 400px;
+    float: right;
+    margin-top: 95px;
+  }
+
+
+/* 아이콘 */
+  .btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: 'SDG';
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn-blue {
+    background: rgb(125, 177, 211);
+    color: white;
+  }
+  .btn-green {
+    background: rgba(129, 216, 208, 0.796);
+    color: white;
+
+  }
+
+  .btn-green:active {
+  }
+
+  .btn-small {
+    padding: 10px 15px;
+    font-size: 12px;
+    font-family: 'SDG';
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+/*아이콘, 큰 레이아웃*/
+.service {
+   
+    background-color: white;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 60px 30px 50px 30px;
+    float: left;
+    font-family: 'SDG';
+  }
+
+  /* 블록 해제 */
+  .service-items {
+  
+  }
+  .service-items div {
+   float: left;
+    width: 25%;
+  }
+  
+  /*나머지 쓸데없는 디자인들*/
+  .service h5 {
+    margin: 10px;
+  }
+  .service-icon {
+    background: white;
+    color: black;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+
+/* squery */
+  .portfolio {
+    background-color: white;
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-family: 'SDG';
+  }
+
+  .portfolio-intro{
+      padding:20px;
+      font-size: 20px;
+  }
+
+  .white-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index : 2;
+    border : 0px solid white;
+    transition: 0.2s;
+  }
+  
+  .white-box:hover {
+    border : 15px solid white;
+    transition: 0.2s;
+  }
+
+  .portfolio-item1 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(/public/images/sqbox-1.jpeg);
+    background-size: cover;
+    position:relative;
+  }
+  
+  .portfolio-item2 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(/public/images/sqbox-2.jpeg);
+    background-size: cover;
+    position:relative;
+  }
+
+  .portfolio-item3 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(/public/images/sqbox-3.jpeg);
+    background-size: cover;
+    position:relative;
+  }
+
+  .portfolio-item4 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(/public/images/sqbox-4.png);
+    background-size: cover;
+    position:relative;
+  }
+
+
+  .portfolio-container {
+    text-align: left;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .portfolio-text {
+    color: white;
+    padding: 50px;
+    width: 100%;
+  } 
+
+
+  /* 슬라이드 */
+
+  .slide-pic{
+    
+    font-family: 'SDG';
+  }
+  .slide-container {
+      width:700vw;
+      z-index: 5;
+      transition: transform 0.5s;
+      transform:translateX();
+      text-align: center;
+
+  }
+
+  .slide-box {
+      width: 100vw;
+      float: left;
+  }
+  
+  .slide-box img{
+
+    width: 60%;
+    height: 60%;
+    object-fit: 60%;
+  
+  }
+
+
+  
+  .slide-next{
+      position:absolute;
+      top: 45%;
+      right:0;
+  }
+
+  .slide-pre{
+    position:absolute;
+    top: 45%;
+    left: 0;
+}
+
+
+
+/* footer */
+  .home-footer {
+    padding: 30px;
+    width: 100%;
+    height: 200px;
+    background-color:#5e9ba270;
+    float:left;
+    font-family: 'SDG'
+    
+  }
+
+  .footer-company {
+      margin-bottom:20px;
+      display: block;
+      font-size:20px;
+      font-weight: 20px;
+      text-decoration: none;
+      color: white; 
+  }
+  .footer-company:hover{
+   color:white;
+}
+.footer-links{
+float:right;
+}
+
+.footer-links a{
+    font-size: 16px;
+    margin: 5px;;
+    text-decoration: none;
+    color: white;
+}
+.footer-copyright p{
+font-size: 10px;
+    margin: 0;
+    color :white;
+}
+
+
+
+
+
+
+
+
+
+/* 로그인이후 */
+
+.main-menu{
+    margin-left:70%;
+    margin-top:50px;
+    z-index: 101;
+    width: 30%;
+    display:none;
+    position:fixed;
+    border: 1px solid gray;
+    font-family: 'SDG';
+}
+
+
+
+
+
+
+/* 새로운견적 */
+
+.newquotation{
+width:100%;
+height:550px;
+float:left;
+}
+
+.myqt-list{
+  float:left;
+  width: 100%;
+  padding: 20px;
+  vertical-align: center;
+  text-align: center;
+  font-family: 'SDG';
+}
+
+/* 견적 끝 */
+.qt-done{
+
+  width: 100%;
+  height:450px;
+  float:left;
+  text-align: center;
+}
+
+
+/* 정보수정 인풋 */
+
+.edit-input input{
+  width: 40%;
+  display:block;
+  margin-top:10px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+
+/* 견적 디테일 */
+
+.qt-detail{
+  font-family: 'SDG';
+  background-color: white;
+  width: 50%;
+  height: 600px;
+  float:left;
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.qt-list{
+
+  margin-top: 100px;
+  font-size: 24px;
+}
+
+.count-down{
+  margin-top:30px;
+  font-size:18px;
+  color: gray;
+
+}
+
+
+
+
+
+/* 게시판 */
+
+.tbwrap{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  width: 100%;
+  font-family: 'SDG';
+  text-align: center;
+
+}
+
+.innertable {
+margin: 0 auto;
+ width: 90%;
+
+}
+
+.table-header{
+  width: 100%;
+  height: 30px;
+  border-bottom: 5px solid black;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table-text:hover{
+  background-color:bisque;
+  cursor: pointer;
+}
+
+/* 강제 글 간격 */
+.table-text>td:first-child{
+  height: 60px;
+}
+
+
+.board-footer{
+  float: left;
+  width: 100%;
+  padding:10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  font-size:20px;
+}
+
+.board-footbtn{
+  padding:50px;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+
+.board-search{
+  width: 100%;
+}
+
+
+/* detail */
+.board-post{
+
+  width: 100%;
+  height: 500px;
+  font-family: 'SDG';
+  text-align: left;
+  padding:20px;
+}
+
+.post-title{
+  float:left;
+  width: 100%;
+  font-size:36px;
+  border-bottom: 3px solid black;
+}
+
+
+.post-info{
+  width:100%;
+  float:left;
+  margin-top: 20px;
+  text-align: right;  
+
+}
+
+.post-main{
+  width:100%;
+  float:left;
+  margin-top: 20px;
+  border-bottom: 3px solid gray;
+
+}
+
+
+.post-writer{
+  font-size:24px;
+}
+
+.post-comments{
+  float:left;
+  width:100%;
+  border-bottom: 1px solid gray;
+  padding:20px;
+  font-size: 16px;
+}
+
+.comments-icon{
+  width: 110px;
+  height: 90px;
+  float:left;
+  margin:5px;
+}
+
+.comments-inbox{
+  margin-top: 20px;
+  padding:10px;
+  margin-left: 10%;
+  float:left;
+  width: 80%;
+  text-align: left;
+  height:200px;
+  border: 1px solid gray;
+}
+
+.comments-intextbox{
+  width: 100%;
+  height: 90px;
+  border: none;
+  resize: none;
+}
+
+.detail-footer{
+
+  float:left;
+  width:100%;
+  padding: 20px;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 미디어쿼리 */
+  @media screen and (max-width : 992px) {
+    .main-iphone {
+      width: 260px;
+      display: block;
+      float: none;
+      margin: auto;
+      margin-top: 42px;
+    }
+    .main-text {
+      float: none;
+      margin-top: 50px;
+      text-align: center;
+      font-family: 'SDG';
+    }
+
+    .service-items {
+      
+        float: left;
+
+        
+      }
+      .service-items div {
+        width: 100%;
+       
+   
+      }
+
+
+     .portfolio{
+       float: left;
+       background-color: white;
+     }
+
+      .portfolio-item1 {
+        width: 100%
+      }
+      .portfolio-item2 {
+
+        width: 100%
+      }
+      .portfolio-item3 {
+        width: 100%
+      }
+      .portfolio-item4 {
+        width: 100%
+      }
+
+      
+
+     
+
+      .modal-header{
+        font-size:24px;
+        margin: 0 auto;
+      }
+
+
+
+      .footer-links a{
+        font-size:10px;
+        color: white;
+      }
+
+
+      .main-menu{
+
+        font-size: 14px;
+      }
+
+      #menu-close{
+        font-size: 12px;
+      }
+
+      .h3{
+        font-size: 22px;;
+      }
+
+      .sub-text{
+        font-size: 14px;
+      }
+
+
+      .qt-detail{
+        font-size: 12px;
+      }
+
+      .qt-list{
+        font-size: 14px;
+      }
+    
+
+      .myqt-day{
+        font-size: 14px;
+      }
+
+
+      
+
+      .table-header{
+        font-size : 10px;
+      }
+
+      .table-text{
+        font-size : 10px;
+      }
+
+      .table-day{
+        font-size : 10px;
+      }
+
+      .board-footbtn{
+        padding: 6px 8px;
+        font-size: 10px;
+        font-weight: 400;
+
+      }
+
+
+      
+
+      .btn{
+        padding: 10px 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+
+
+      .post-title{
+        font-size: 16px;
+      }
+
+      .post-writer{
+        font-size: 16px;
+      }
+ 
+      .post-info{
+        font-size: 12px;
+      }
+
+      .post-main{
+        font-size : 12px;
+      }
+
+
+      .post-comments{
+        font-size: 12px;
+      }
+
+      .comments-icon{
+        width: 80px;
+        height:65px;
+      }
+
+
+      .comments-inbox{
+        font-size: 8px;
+
+      }
+
+
+      .comments-inbox{
+        height:150px;
+      }
+
+
+      .comments-intextbox{
+        height:40px;
+      }
+
+
+      .my-edit{
+        font-size: 12px;
+      }
+   
+
+
+      .home-footer{
+        font-size: 12px;
+      }
+  }

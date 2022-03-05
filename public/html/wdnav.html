@@ -1,0 +1,30 @@
+<!-- 네비 -->
+<nav class="nav-menu">
+    <a href="/home" style="vertical-align: middle;" >Your Wedding</a>
+</nav>
+
+
+
+
+
+<script>
+  // nav 스크롤
+  $(window).on('scroll', function() {
+  
+      if($(window).scrollTop() > 300) {
+          $('.nav-menu').addClass('nav-menuShow');
+      }else{
+          $('.nav-menu').removeClass('nav-menuShow');
+      };
+  });
+
+  //main-menu 
+  $('#nav-open').on('click', function(){
+  
+  $('.main-menu').slideToggle();
+});
+
+$('#menu-close').on('click', function(e){
+  $('.main-menu').slideToggle();
+});
+  </script>

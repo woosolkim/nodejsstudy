@@ -1,0 +1,55 @@
+<!-- 네비 -->
+<nav class="nav-menu">
+    <a href="/home" style="vertical-align: middle;" >Your Wedding</a>
+
+    <a href="/logout"><i type="button" class="fas fa-sign-out-alt fa-1x nav-button"></i></a>
+    <i type="button" class="fas fa-bars nav-button" id="nav-open"></i>
+    <span class="nav-whois">
+      <a ><%= user.userName %>님</a>
+    </span>
+</nav>
+
+
+<div class="main-menu">
+      <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        홈
+      </a>
+      <a href="/newquotation" class="list-group-item list-group-item-action">새 견적만들기</a>
+      <a href="/myquotation/<%= user.userId %>" class="list-group-item list-group-item-action">나의 견적</a>
+      <a href="/board" class="list-group-item list-group-item-action">게시판</a>
+      <a class="list-group-item list-group-item-action disabled">쪽지함</a>
+      <a class="list-group-item list-group-item-action disabled">나의 일정</a>
+      <a class="list-group-item list-group-item-action disabled">실제 거래 견적</a>
+      <a class="list-group-item list-group-item-action disabled">반지정보</a>
+      <a class="list-group-item list-group-item-action disabled">스튜디오 정보</a>
+      <a class="list-group-item list-group-item-action disabled">메이크업정보</a>
+      <a class="list-group-item list-group-item-action disabled">드레스정보</a>
+      <a class="list-group-item list-group-item-action disabled">웨딩홀 정보</a>
+      <a href="/mypage" class="list-group-item list-group-item-action">나의 정보 수정</a>
+    <button type="button" class="btn btn-green" id="menu-close" style="width:100%">닫기</button>
+    <input type="text" value="<%= user._userId %>" name="id" style="display : none;" >
+
+</div>
+
+
+<script>
+  // nav 스크롤
+  $(window).on('scroll', function() {
+  
+      if($(window).scrollTop() > 300) {
+          $('.nav-menu').addClass('nav-menuShow');
+      }else{
+          $('.nav-menu').removeClass('nav-menuShow');
+      };
+  });
+
+  //main-menu 
+  $('#nav-open').on('click', function(){
+  
+  $('.main-menu').slideToggle();
+});
+
+$('#menu-close').on('click', function(e){
+  $('.main-menu').slideToggle();
+});
+  </script>

@@ -1,0 +1,67 @@
+<div class="slide-pic"> 
+    <h3 class="my-4 text-center"> 둘러보세요</h3>
+   <p class="sub-text text-center">고객님들은 이렇게 이용하고 있어요!</p>
+      </div>
+
+     <div style="overflow: hidden; position:relative">
+     <div class="slide-container">
+       <div class="slide-box">
+           <img src="/public/images/newquotation.png">
+           <p class="sub-text text-center">쉽고 간편한 견적 등록!</p>
+         </div>
+       <div class="slide-box">
+           <img src="/public/images/myquotation.png">
+           <p class="sub-text text-center">나의 견적은 간편하고 빠르게</p>
+
+         </div>
+       <div class="slide-box">
+           <img src="/public/images/quotationing.png">
+           <p class="sub-text text-center">실시간 플래너 매칭</p>
+           
+         </div>   
+         <div class="slide-box">
+          <img src="/public/images/board.png">
+          <p class="sub-text text-center">다양한 정보를 한눈에 볼수 있는 커뮤니티</p>
+          
+        </div>   
+
+        <div class="slide-box">
+          <img src="/public/images/search.png">
+          <p class="sub-text text-center">강력한 검색 기능</p>
+          
+        </div>   
+
+        <div class="slide-box">
+          <img src="/public/images/comments.png">
+          <p class="sub-text text-center">추천/댓글 기능</p>
+          
+        </div>   
+
+        <div class="slide-box">
+          <img src="/public/images/joinus.png">
+          <p class="sub-text text-center">지금 가입하세요!</p>
+          
+        </div>   
+   </div>
+         
+         <button type="button" class="btn btn-secondary slide-next">&gt;</button>
+
+         <button type="button" class="btn btn-secondary slide-pre">&lt;</button>
+   </div>
+
+   <script>
+       var nowpic = 1;
+       
+       $('.slide-next').click(function(){
+           if( nowpic != 7) {
+      $('.slide-container').css('transform','translateX(-' + nowpic + '00vw)');
+      nowpic = nowpic + 1;        
+           }
+         });
+      $('.slide-pre').click(function(){
+           if( nowpic != 1) {
+               nowpic = nowpic - 1;  
+      $('.slide-container').css('transform','translateX(-' + (nowpic-1) + '00vw)');
+           }
+         });
+</script>

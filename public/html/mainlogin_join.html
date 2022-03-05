@@ -1,0 +1,113 @@
+<!-- 로그인 모달 -->
+<div class="black-background">
+  <div class="white-background">
+    <p class="modal-header">Your Wedding</p>
+    <form action="/login" method="POST">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="ID" name="id">
+        <input type="password" class="form-control" placeholder="Password" name="pw">
+      </div>
+
+      <button type="submit" class="btn btn-blue" id="login-send">전송</button>
+      <button type="button" class="btn btn-green" id="login-close">닫기</button>
+    </form>
+  </div>
+</div>
+
+<!-- 회원가입 모달 -->
+<div class="black-background2">
+  <div class="white-background2">
+    <p class="modal-header">Your Wedding</p>
+    <form action="/welcome" method="post">
+      <div class="form-group join-input">
+        <input type="text" class="form-control" placeholder="ID" name="userid" id="join-id">
+        <a class="id-alert">아이디를 입력하세요.</a>
+        <input type="password" class="form-control" placeholder="비밀번호" name="userpassword" id="join-pw">
+        <a class="pw-alert">비밀번호를 입력하세요.</a>
+        <input type="text" class="form-control" placeholder="성함" name="username" id="join-name">
+        <a class="name-alert">이름을 입력하세요.</a>
+        <input type="tel" class="form-control" placeholder="전화번호" name="userph" id="join-phone">
+        <a class="phone-alert">전화번호를 입력하세요.</a>
+        <input type="email" class="form-control" placeholder="Email" name="useremail" id="join-email">
+        <a class="email-alert">이메일을 입력하세요.</a>
+
+      </div>
+
+      <button type="submit" class="btn btn-blue" id="join-send">가입확인</button>
+      <button type="button" class="btn btn-green" id="join-close">닫기</button>
+    </form>
+  </div>
+</div>
+
+
+
+<!-- 메인 탑 -->
+<div class="main-background">
+  <div class="main-container">
+    <div class="main-text">
+      <h1 style=" font-family: 'Gloria Hallelujah', cursive;font-size: 50px; color: #84D9C9;">Your Wedding</h1>
+      <p style="margin-top:50px;">당신의 최고의 날을 보다 주체적이고 합리적이게 준비하세요</p>
+      <button class="btn btn-blue" id="login">로그인</button>
+      <button class="btn btn-green" id="join">회원가입</button>
+    </div>
+    <img src="/public/images/wd-main.png" class="main-iphone">
+  </div>
+</div>
+
+<!-- 로그인,회원가입 버튼클릭 이벤트 jquery -->
+<script>
+  $('#login').on('click', function () {
+    $('.black-background').addClass('slide-down');
+  });
+
+  $('#join').on('click', function () {
+    $('.black-background2').addClass('slide-down');
+  });
+
+  $('#login-close').on('click', function () {
+    $('.black-background').removeClass('slide-down');
+  });
+
+  $('#join-close').on('click', function () {
+    $('.black-background2').removeClass('slide-down');
+  });
+
+
+
+  $('#join-send').on('click', function (e) {
+    var joinId = $('#join-id').val();
+    var joinPw = $('#join-pw').val();
+    var joinName = $('#join-name').val();
+    var joinPh = $('#join-phone').val();
+    var joinEmail = $('#join-email').val();
+
+  
+
+    if(joinId == ''){$('.id-alert').show();
+    e.preventDefault();
+    }else{
+      
+      if(joinPw == ''){$('.pw-alert').show();
+      e.preventDefault();
+
+    }else{
+      if(joinName == ''){$('.name-alert').show();
+      e.preventDefault();
+
+    }else{
+      if(joinPh == ''){$('.phone-alert').show();
+      e.preventDefault();
+
+    }else{
+      if(joinEmail == ''){$('.email-alert').show();
+      e.preventDefault();
+
+    }
+    }
+    }
+    }
+    }
+
+
+  });
+</script>
